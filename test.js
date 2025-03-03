@@ -1,12 +1,19 @@
-const axios = require('axios');
+// const axios = require('axios');
+// const { ensureEntityExists } = require('../index'); // Імпортуй функцію з index.js
 
-const API_KEY = '4de874cf-403a-4649-8e55-3893a55835ac';
-const BASE_URL = 'https://api.finmap.online/v2.2/';
-const headers = {
-  'Authorization': `Bearer ${API_KEY}`,
-  'Content-Type': 'application/json',
-};
+// jest.mock('axios'); // Мокуємо axios, щоб не робити реальні запити
 
-axios.get(`${BASE_URL}health`, { headers })
-  .then(response => console.log('Тестовий запит:', response.data))
-  .catch(error => console.error('Помилка:', error.response ? error.response.data : error.message));
+// describe('ensureEntityExists', () => {
+//   it('повертає ID, якщо сутність існує', async () => {
+//     axios.get.mockResolvedValue({ data: [{ id: '123' }] });
+//     const result = await ensureEntityExists('categories/expense', 'Food', { label: 'Food' });
+//     expect(result).toBe('123');
+//   });
+
+//   it('створює сутність, якщо її немає', async () => {
+//     axios.get.mockRejectedValue({ response: { status: 404 } });
+//     axios.post.mockResolvedValue({ data: { id: '456' } });
+//     const result = await ensureEntityExists('categories/expense', 'Food', { label: 'Food' });
+//     expect(result).toBe('456');
+//   });
+// });
