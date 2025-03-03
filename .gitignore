@@ -1,0 +1,28 @@
+# Node.js залежності
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Тимчасові файли
+*.log
+*.tmp
+
+# Конфігураційні файли з чутливими даними
+.env
+config.json
+
+# Файли ngrok (якщо завантажив його в папку проєкту)
+ngrok
+ngrok.exe
+
+# Тимчасові файли ОС
+.DS_Store
+Thumbs.db
+
+# Вивід тестів чи дебагінгу (якщо є)
+coverage/
+dist/
+
+# Локальні редактори
+.vscode/
+.idea/
